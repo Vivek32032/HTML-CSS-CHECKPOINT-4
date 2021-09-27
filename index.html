@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexor</title>
 
     <!-- Font Family -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap"
-        rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8bc5acd820.js" crossorigin="anonymous"></script>
@@ -29,14 +28,14 @@
             </label>
             <input id="toggle" type="checkbox" />
             <nav class="nav">
-                <ul class="flex item-center nav-menu">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
+                <ul class="flex item-center nav-menu ms-wrap">
+                    <li><a class="active " href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#price">Pricing</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
                     <li class="sub-menu-box"><a href="#"><span>Drop Down</span>
                             <i class="fa fa-angle-down"></i></a>
                         <ul class="sub-menu menu-box">
@@ -58,14 +57,15 @@
                             <li><a href="#">Drop Down 5</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </nav>
     </header>
     <main>
+        <div class="heading-replace"></div>
         <!-- hero -->
-        <section class="hero-container flex item-center padding">
+        <section id="hero" class="hero-container flex item-center padding">
             <div class="hero"></div>
 
             <section class="container hero-content">
@@ -79,8 +79,8 @@
                 </header>
 
                 <!-- why choose -->
-                <section class="why-choose flex item-center justify-between sm-wrap">
-                    <article class="red-card flex-32 color-white width-100">
+                <section class="why-choose flex item-center justify-between ms-wrap">
+                    <article class="red-card flex-32 color-white ms-width-100">
                         <h2 class="heading text-left color-white ">Why Choose Flexor far your company website?</h2>
                         <p class="para color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor
@@ -90,22 +90,22 @@
                         <div class="text-center"><a class="cylindrical-box" href="#"><span>Learn More </span> <i
                                     class="fa fa-angle-right" aria-hidden="true"></i></a></div>
                     </article>
-                    <div class="flex flex-65 justify-between sm-wrap width-100">
-                        <article class="flex-30 white-card width-100">
+                    <div class="flex flex-65 justify-between ms-wrap ms-width-100">
+                        <article class="flex-30 white-card ms-width-100">
                             <i class="far fa-newspaper"></i>
                             <h4 class="heading-tertiary">Corporis voluptates sit</h4>
                             <p class="para-small text-center">Consequuntur sunt aut quasi enim aliquam quaw harum
                                 pariatur
                                 laboris nisi ut aliquip</p>
                         </article>
-                        <article class="flex-30 white-card width-100">
+                        <article class="flex-30 white-card ms-width-100">
                             <i class="fas fa-cube"></i>
                             <h4 class="heading-tertiary">Ullamco laboris ladore pan</h4>
                             <p class="para-small text-center">Excepteur sint occaecat cupidatat non proident, sunt in
                                 culpa qui
                                 offcia deserunt</p>
                         </article>
-                        <article class="flex-30 white-card width-100">
+                        <article class="flex-30 white-card ms-width-100">
                             <i class="far fa-images"></i>
                             <h4 class="heading-tertiary">Corporis voluptates</h4>
                             <p class="para-small text-center">Consequuntur sunt aut quasi enim aliquam quaw harum
@@ -116,15 +116,16 @@
                 </section>
             </section>
         </section>
+        <div class="back-to-top center"><a href="#hero"><i class="fa fa-angle-up color-white"></i></a></div>
         <!-- about -->
-        <section class="about section-bg text-left">
-            <section class="container flex justify-between item-stretch">
-                <div class="flex-40 image-container">
+        <section id="about" class="about section-bg text-left">
+            <section class="container flex justify-between item-stretch wrap ">
+                <div class="flex-40 image-container ms-width-100">
                     <img src="./assets/media/about-img.jpg" alt="about image">
                     <i class="fas fa-play play-button"></i>
 
                 </div>
-                <article class="flex-55 about-article">
+                <article class="flex-55 about-article ms-width-100">
 
                     <div class="margin-tb">
                         <h5 class="para">About us</h5>
@@ -178,7 +179,7 @@
 
         </section>
         <!-- other-brands     -->
-        <section class="container">
+        <section id="" class="container">
             <div class="other-brands flex">
                 <div class="brand-image">
                     <img src="./assets/media/clients/client-1.png" alt="">
@@ -206,14 +207,14 @@
                 </div>
 
             </div>
-            <div class="center">
-                <div class="slider-dot color-primary"></div>
+            <div class="center dot-container">
+                <div class="slider-dot active"></div>
                 <div class="slider-dot"></div>
 
             </div>
         </section>
         <!-- services -->
-        <section class="section-bg services">
+        <section id="services" class="section-bg services">
             <section class="container">
                 <header>
                     <h2 class="heading">Services</h2>
@@ -224,9 +225,9 @@
                         ea. Quia fugiat sit in iste officils commodi quidem hic quas.</p>
                 </header>
                 <section class="flex wrap justify-between item-stretch">
-                    <article class="flex-32">
+                    <article class="flex-32 width-100 ms-width-48">
                         <div class="icon-box center">
-                            <i class="fas fa-fingerprint"></i>
+                            <i class="fas fa-laptop"></i>
                         </div>
                         <div>
                             <h3 class="heading-tertiary">Lorem Ipsum</h3>
@@ -234,9 +235,9 @@
                                 excepturi sint occaecati cupiditate non provident</p>
                         </div>
                     </article>
-                    <article class="flex-32">
+                    <article class="flex-32 width-100 ms-width-48">
                         <div class="icon-box center">
-                            <i class="fas fa-fingerprint"></i>
+                            <i class="far fa-chart-bar"></i>
                         </div>
                         <div>
                             <h3 class="heading-tertiary">Dolor Sitema</h3>
@@ -244,9 +245,10 @@
                                 ex ea commodo consequat tarad limino ata</p>
                         </div>
                     </article>
-                    <article class="flex-32">
+                    <article class="flex-32 width-100 ms-width-48">
                         <div class="icon-box center">
-                            <i class="fas fa-fingerprint"></i>
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+
                         </div>
                         <div>
                             <h3 class="heading-tertiary">Sed Ut perspiciatis</h3>
@@ -254,9 +256,9 @@
                                 dollore eu fugiat nulla pariatur</p>
                         </div>
                     </article>
-                    <article class="flex-32">
+                    <article class="flex-32 width-100 ms-width-48">
                         <div class="icon-box center">
-                            <i class="fas fa-fingerprint"></i>
+                            <i class="far fa-image"></i>
                         </div>
                         <div>
                             <h3 class="heading-tertiary">MAGNI DOLORES</h3>
@@ -264,9 +266,9 @@
                                 officia desserunt mollit anim id est laborum</p>
                         </div>
                     </article>
-                    <article class="flex-32">
+                    <article class="flex-32 width-100 ms-width-48">
                         <div class="icon-box center">
-                            <i class="fas fa-fingerprint"></i>
+                            <i class="fas fa-tasks"></i>
                         </div>
                         <div>
                             <h3 class="heading-tertiary">NEMO Enim</h3>
@@ -274,9 +276,9 @@
                                 blanditiis praesentium coluptatum deleniti atque</p>
                         </div>
                     </article>
-                    <article class="flex-32">
+                    <article class="flex-32 width-100 ms-width-48">
                         <div class="icon-box center">
-                            <i class="fas fa-fingerprint"></i>
+                            <i class="far fa-calendar-alt"></i>
                         </div>
                         <div>
                             <h3 class="heading-tertiary">ELUSMOD TEMPOR</h3>
@@ -292,7 +294,7 @@
         <!-- values -->
         <section class="values flex container wrap justify-between">
 
-            <article class="value-bg bg-one flex-49">
+            <article class="value-bg bg-one flex-49 width-100">
                 <div class="values-content">
                     <h3 class="heading-tertiary">Our Mission</h3>
                     <p class="para">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
@@ -301,7 +303,7 @@
 
                 </div>
             </article>
-            <article class="value-bg bg-two flex-49">
+            <article class="value-bg bg-two flex-49 width-100">
                 <div class="values-content">
                     <h3 class="heading-tertiary">Our Mission</h3>
                     <p class="para">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
@@ -310,7 +312,7 @@
 
                 </div>
             </article>
-            <article class="value-bg bg-three flex-49">
+            <article class="value-bg bg-three flex-49 width-100">
                 <div class="values-content">
                     <h3 class="heading-tertiary">Our Mission</h3>
                     <p class="para">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
@@ -319,7 +321,7 @@
 
                 </div>
             </article>
-            <article class="value-bg bg-four flex-49">
+            <article class="value-bg bg-four flex-49 width-100">
                 <div class="values-content">
                     <h3 class="heading-tertiary">Our Mission</h3>
                     <p class="para">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
@@ -331,27 +333,65 @@
 
         </section>
         <!-- portfolio -->
-        <section class="portfoilo padding">
+        <section id="portfolio" class="portfoilo padding">
             <section class="container">
-                <section class="portfolio-banner">
-                    <div>
+                <section class="portfolio-banner flex">
+                    <div class="min-width-100 quote-div center column">
                         <figure>
-                            <img src="./assets/media/portfolioportfolio-details-1.jpg" alt="Jana karlis image">
-                            <figcaption class="text-center">
+                            <div class="portfolio-person-img">
+                                <img src="./assets/media/team/team-1.jpg" alt="Jana karlis image">
+                            </div>
+                            <figcaption class="text-center color-white">
                                 Jena karlis
-                                <p class="para-small">Store owner</p>
+                                <p class="para-small color-white">Store owner</p>
                             </figcaption>
                         </figure>
 
-                        <blockquote class="para text-center">
+                        <blockquote class="para text-center color-white italic">
+                            <strong>"</strong>
                             Enim nisi export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                            tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                            tempor labore quem eram duis noster aute amet eram fore quis sint minim. <strong>"</strong>
                         </blockquote>
+                        <div class="center dot-container color-white">
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot active"></div>
+                            <div class="slider-dot "></div>
+                            <div class="slider-dot"></div>
+
+                        </div>
                     </div>
+
+                    <div class="min-width-100 center column">
+                        <figure>
+                            <div class="portfolio-person-img">
+                                <img src="./assets/media/team/team-2.jpg" alt="Jana karlis image">
+                            </div>
+                            <figcaption class="text-center color-white">
+                                Jena karlis
+                                <p class="para-small color-white">Store owner</p>
+                            </figcaption>
+                        </figure>
+
+                        <blockquote class="para text-center color-white italic">
+                            <strong>"</strong>
+                            Enim nisi export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
+                            tempor labore quem eram duis noster aute amet eram fore quis sint minim. <strong>"</strong>
+                        </blockquote>
+                        <div class="center color-white dot-container">
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot active"></div>
+                            <div class="slider-dot"></div>
+
+                        </div>
+                    </div>
+
 
                 </section>
                 <header>
-                    <h2 class="heading">Portfolio</h2>
+                    <h2 class="heading margin-tb">Portfolio</h2>
                     <p class="para text-center">Magnam dolores commodi Suscipit. Necessitatibus eius consequatur ex
                         aliquid
                         fuga eum quidem. Sit
@@ -367,8 +407,8 @@
                     </ul>
                 </nav>
 
-                <section class="flex wrap justify-between">
-                    <article class="portfolio-article flex-32">
+                <figure class="flex wrap justify-between">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-1.jpg" alt="portfolio image">
                         </div>
@@ -387,7 +427,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-2.jpg" alt="portfolio image">
                         </div>
@@ -406,7 +446,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-3.jpg" alt="portfolio image">
                         </div>
@@ -425,7 +465,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-4.jpg" alt="portfolio image">
                         </div>
@@ -445,7 +485,7 @@
 
                     </article>
 
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-5.jpg" alt="portfolio image">
                         </div>
@@ -464,7 +504,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-6.jpg" alt="portfolio image">
                         </div>
@@ -483,7 +523,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-7.jpg" alt="portfolio image">
                         </div>
@@ -502,7 +542,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-8.jpg" alt="portfolio image">
                         </div>
@@ -521,7 +561,7 @@
                         </div>
 
                     </article>
-                    <article class="portfolio-article flex-32">
+                    <article class="portfolio-article flex-32 width-100 ms-width-48">
                         <div>
                             <img src="./assets/media/portfolio/portfolio-9.jpg" alt="portfolio image">
                         </div>
@@ -540,11 +580,11 @@
                         </div>
 
                     </article>
-                </section>
+                </figure>
             </section>
         </section>
         <!-- team -->
-        <section class="section-bg team">
+        <section id="team" class="section-bg team">
             <section class="container">
                 <header>
                     <h2 class="heading">team</h2>
@@ -554,8 +594,8 @@
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
                         ea. Quia fugiat sit in iste officils commodi quidem hic quas.</p>
                 </header>
-                <section class="flex justify-between item-center">
-                    <figure class="flex-23">
+                <section class="flex justify-between item-center ms-wrap">
+                    <figure class="flex-23 ms-width-48 width-100">
                         <div class="team-image">
                             <img src="./assets/media/team/team-1.jpg" alt="Team image">
                             <nav class="nav">
@@ -573,7 +613,7 @@
                         </figcaption>
 
                     </figure>
-                    <figure class="flex-23">
+                    <figure class="flex-23 ms-width-48 width-100">
                         <div class="team-image">
                             <img src="./assets/media/team/team-2.jpg" alt="Team image">
                             <nav class="nav">
@@ -591,7 +631,7 @@
                         </figcaption>
 
                     </figure>
-                    <figure class="flex-23">
+                    <figure class="flex-23 ms-width-48 width-100">
                         <div class="team-image">
                             <img src="./assets/media/team/team-3.jpg" alt="Team image">
                             <nav class="nav">
@@ -609,7 +649,7 @@
                         </figcaption>
 
                     </figure>
-                    <figure class="flex-23">
+                    <figure class="flex-23 ms-width-48 width-100">
                         <div class="team-image">
                             <img src="./assets/media/team/team-4.jpg" alt="Team image">
                             <nav class="nav">
@@ -631,7 +671,7 @@
             </section>
         </section>
         <!-- pricing -->
-        <section class="padding team">
+        <section id="price" class="padding team">
             <section class="container">
                 <header class="container">
                     <h2 class="heading">Pricing</h2>
@@ -641,8 +681,8 @@
                         sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
                         ea. Quia fugiat sit in iste officils commodi quidem hic quas.</p>
                 </header>
-                <section class="flex justify-between item-stretch">
-                    <div class="plan-price flex-23">
+                <section class="flex justify-between item-stretch ms-wrap">
+                    <div class="plan-price flex-23 ms-width-48 width-100 margin-tb">
                         <h4 class="para">Free</h4>
                         <p class="color-grey"><strong><sup>$</sup>0</strong> / month</p>
                         <p class="para-small">Aida dere</p>
@@ -654,7 +694,7 @@
                             <a href="#" class="btn">Buy Now</a>
                         </div>
                     </div>
-                    <div class="plan-price flex-23">
+                    <div class="plan-price flex-23 ms-width-48 width-100 margin-tb">
                         <h4 class="para active">Business</h4>
                         <p class="color-grey"><strong><sup>$</sup>19</strong> / month</p>
                         <p class="para-small">Aida dere</p>
@@ -666,7 +706,7 @@
                             <a href="#" class="btn">Buy Now</a>
                         </div>
                     </div>
-                    <div class="plan-price flex-23">
+                    <div class="plan-price flex-23 ms-width-48 width-100 margin-tb">
                         <h4 class="para">Free</h4>
                         <p class="color-grey"><strong><sup>$</sup>29</strong> / month</p>
                         <p class="para-small">Aida dere</p>
@@ -678,7 +718,7 @@
                             <a href="#" class="btn">Buy Now</a>
                         </div>
                     </div>
-                    <div class="plan-price flex-23">
+                    <div class="plan-price flex-23 ms-width-48 width-100 margin-tb">
                         <h4 class="para">Free</h4>
                         <p class="color-grey"><strong><sup>$</sup>49</strong> / month</p>
                         <p class="para-small">Aida dere</p>
@@ -707,7 +747,7 @@
                         alias
                         ea. Quia fugiat sit in iste officils commodi quidem hic quas.</p>
                 </header>
-                <section>
+                <section class="padding-3">
                     <div class="question">
                         <div class="flex justify-between item-center">
                             <p class="para active"> <i class="far fa-question-circle"></i> Non consectetur a erat
@@ -754,7 +794,7 @@
         </section>
 
         <!-- contact -->
-        <section class="contact padding">
+        <section id="contact" class="contact padding">
             <section class="container">
                 <header>
                     <h2 class="heading">Contact</h2>
@@ -765,70 +805,71 @@
                         alias
                         ea. Quia fugiat sit in iste officils commodi quidem hic quas.</p>
                 </header>
-                <address class="flex justify-between item-stretch">
-                    <div class="flex-32 flex item-start address-card">
-                        <div class="icon-box center">
-                            <i class="fas fa-map-marker-alt"></i>
+                <section class="padding-6">
+                    <address class="flex justify-between item-stretch ms-wrap">
+                        <div class="flex-32 flex item-start address-card ms-width-100 margin-tb">
+                            <div class="icon-box center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="heading-tertiary text-left">Our Address</h3>
+                                <p class="para-small">
+                                    A108 Adam Street, New York, NY535022
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="heading-tertiary text-left">Our Address</h3>
-                            <p class="para-small">
-                                A108 Adam Street, New York, NY535022
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="flex-32 flex item-start address-card">
-                        <div class="icon-box center">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h3 class="heading-tertiary text-left">Our Address</h3>
-                            <!-- <p class="para-small">
+                        <div class="flex-32 flex item-start address-card ms-width-100 margin-tb">
+                            <div class="icon-box center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="heading-tertiary text-left">Our Address</h3>
+                                <!-- <p class="para-small">
                             A108 Adam Street, New York, NY535022
                         </p> -->
-                            <a class="para-small"
-                                href="mailto:info@example.com?subject=free chocolate">info@example.com</a>
-                            <a class="para-small"
-                                href="mailto:info@example.com?subject=free chocolate">contact@example.com</a>
+                                <a class="para-small"
+                                    href="mailto:info@example.com?subject=free chocolate">info@example.com</a>
+                                <a class="para-small"
+                                    href="mailto:info@example.com?subject=free chocolate">contact@example.com</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex-32 flex item-start address-card">
-                        <div class="icon-box center">
-                            <i class="fas fa-map-marker-alt"></i>
+                        <div class="flex-32 flex item-start address-card ms-width-100 margin-tb">
+                            <div class="icon-box center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="heading-tertiary text-left">Call Us</h3>
+                                <p class="para-small">+1 5589 55488 55</p>
+                                <p class="para-small">+1 6678 254445 41</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="heading-tertiary text-left">Call Us</h3>
-                            <p class="para-small">+1 5589 55488 55</p>
-                            <p class="para-small">+1 6678 254445 41</p>
-                        </div>
-                    </div>
 
-                </address>
-                <form action="https://index.html" class="form text-center">
-                    <fieldset>
-                        <div class="flex justify-between">
-                            <input class="width-full flex-49 form-control" type="text" placeholder="Your Name"
-                                name="name">
-                            <input class="width-full flex-49 form-control" type="email" placeholder="Your Email"
-                                name="email">
-                        </div>
-                        <input class="width-full form-control" type="text" placeholder="Subject" name="subject">
-                        <textarea class="width-full form-control" name="massage" id="" cols="30"
-                            rows="7">Message</textarea>
-                        <a href="#" class="btn">Send Message</a>
-                    </fieldset>
-                </form>
+                    </address>
+                    <form action="https://index.html" class="form text-center">
+                        <fieldset>
+                            <div class="flex justify-between">
+                                <input class="width-full flex-49 form-control" type="text" placeholder="Your Name"
+                                    name="name">
+                                <input class="width-full flex-49 form-control" type="email" placeholder="Your Email"
+                                    name="email">
+                            </div>
+                            <input class="width-full form-control" type="text" placeholder="Subject" name="subject">
+                            <textarea class="width-full form-control" name="massage" id="" cols="30"
+                                rows="7">Message</textarea>
+                            <a href="#" class="btn">Send Message</a>
+                        </fieldset>
+                    </form>
+                </section>
 
             </section>
-        </section>
         </section>
 
     </main>
     <!-- footer -->
     <footer class="section-bg footer">
-        <section class="flex justify-between container"> 
-            <div class="flex-20">
+        <section class="flex justify-between container ms-wrap">
+            <div class="flex-20 ms-width-48 width-100">
                 <a class="brand" href="#"><strong>Flexor</strong> </a>
                 <address>
                     <p class="para-small">A<small>10</small>8 Adam Street</p>
@@ -837,76 +878,87 @@
                     <div class="contact-no">
                         <p class="para-small"><strong>Phone:</strong> +1 5589 55488 55</p>
                         <a class="para-small"
-                            href="mailto:info@example.com?subject=free chocolate"><strong>Email:</strong> info@example.com</a>
+                            href="mailto:info@example.com?subject=free chocolate"><strong>Email:</strong>
+                            info@example.com</a>
                     </div>
 
                 </address>
 
             </div>
-            <nav class="flex-15">
+            <nav class="flex-15 ms-width-48 width-100">
                 <h5 class="sub-heading text-left">Useful Links</h5>
                 <ul class="">
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Home</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> About us</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Services</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Terms of service</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Privacy policy</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Home</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> About us</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Services</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Terms of service</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Privacy policy</a></li>
                 </ul>
             </nav>
-            <nav class="flex-15">
+            <nav class="flex-15 ms-width-48 width-100">
                 <h5 class="sub-heading text-left">Our Services</h5>
                 <ul class="">
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Web Design</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Web Development</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Product Management</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Marketing</a></li>
-                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle" aria-hidden="true"></i> Graphic Design</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Web Design</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Web Development</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Product Management</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Marketing</a></li>
+                    <li><a class="active para-small" href="#"> <i class="fa fa-angle-right menu-right-angle"
+                                aria-hidden="true"></i> Graphic Design</a></li>
                 </ul>
             </nav>
-            <div class="flex-32">
+            <div class="flex-32 ms-width-48 width-100">
                 <h5 class="sub-heading text-left">Join Our Newsletter</h5>
-                <p class="para">Tamen quen nulla quae legam multos aute sint culpa legam  noster magna</p>
+                <p class="para">Tamen quen nulla quae legam multos aute sint culpa legam noster magna</p>
                 <div class="slider flex justify-end">
                     <a href="#" class="btn">Subscribe</a>
                 </div>
 
             </div>
         </section>
-        <div class="flex justify-between container item-center footer-bootom">
-            <div class="copy-right-info">
-            <p class="para margin-null">
-                &copy Copyright <strong>Flexor.</strong> All Rights Reserved 
-            </p>
-            <small class="designed-by">Designed by <em class="color-primary">BootstrapMade</em></small>
+        <div class="flex justify-between container item-center footer-bootom ms-wrap ms-text-center">
+            <div class="copy-right-info ms-width-100">
+                <p class="para margin-null">
+                    &copy Copyright <strong>Flexor.</strong> All Rights Reserved
+                </p>
+                <small class="designed-by">Designed by <em class="color-primary">BootstrapMade</em></small>
             </div>
-            <nav class="">
-                <ul class="flex">
+            <nav class=" ms-width-100">
+                <ul class="flex justify-center">
                     <ul>
                         <div class="social-media-icon center">
-                            <i class="fab fa-twitter"></i>
+                            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
                         </div>
                     </ul>
                     <ul>
                         <div class="social-media-icon center">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </ul>
                     <ul>
                         <div class="social-media-icon center">
-                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.facebook.com"><i class="fab fa-instagram"></i></a>
                         </div>
                     </ul>
                     <ul>
                         <div class="social-media-icon center">
-                            <i class="fab fa-skype" aria-hidden="true"></i>
-                         </div>
+                            <a href="https://www.facebook.com"><i class="fab fa-skype" aria-hidden="true"></i></a>
+                        </div>
                     </ul>
                     <ul>
                         <div class="social-media-icon center">
-                            <i class="fab fa-linkedin-in"></i>
+                            <a href="https://www.facebook.com"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </ul>
-    
+
                 </ul>
             </nav>
         </div>

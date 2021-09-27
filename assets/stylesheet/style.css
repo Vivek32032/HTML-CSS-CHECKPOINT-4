@@ -59,15 +59,6 @@ table {
 	border-spacing: 0;
 }
 
-/*font-family  */
-/* font-family: 'Open Sans', sans-serif; */
-
-
-
-/* icons used */
-
-/* <i class="fa fa-facebook-square" aria-hidden="true"></i> */
-/* <i class="fab fa-twitter-square"></i> */
 
 /* MY reset*/
 
@@ -96,7 +87,7 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.2;
     font-size: 1.4rem ;
     letter-spacing: -1px;
@@ -128,6 +119,12 @@ body {
 .margin-null {
     margin: 0;
 } 
+.padding-3 {
+    padding: 0 3rem;
+}
+.padding-6 {
+    padding: 0 6rem;
+}
 
 
 
@@ -226,6 +223,9 @@ body {
 .width-full {
     width: 100%;
 }
+.min-width-100 {
+    min-width: 100%;
+}
 /* center Elements */
 
 .center {
@@ -270,6 +270,9 @@ body {
 }
 .font-0 {
     font-size: 0;
+}
+.italic {
+    font-style: italic;
 }
 
 
@@ -336,11 +339,19 @@ a:hover {
    
 }
 /* header */
+.heading-replace {
+    width: 100%;
+    height: 4.5rem;
+}
 header .para {
     margin-bottom: 2.5rem;
 }
 .header {
     padding: 1rem;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
 }
 .header a:hover {
     color: var(--primary);
@@ -348,7 +359,9 @@ header .para {
 
 .nav-menu { 
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
+}
+.nav-menu .active{ 
+    color: var(--primary);
 }
 .nav-menu a{ 
     color: var(--text-dark);
@@ -363,7 +376,6 @@ header .para {
 }
 .nav-menu li {
     margin-left: 1.5rem;  
-    display: block;
 }
 .menu-box {
     background-color: white;
@@ -400,7 +412,6 @@ header .para {
 .brand {
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
     color: var(--text-dark);
 }
 
@@ -412,8 +423,7 @@ header .para {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.308)), url("../media/hero-bg.jpg");
     background-position: 50%;
     background-size: cover;
-    height: 65vh;
-    /* height: 600px; */
+    height: 600px;
     color: white;
     position: absolute;
     left: 0;
@@ -427,7 +437,7 @@ header .para {
     text-align: left;
     font-size: 3.5rem;
     line-height: 1;
-    margin-top: 200px;
+    padding-top: 200px;
 
 }
 .hero-para {
@@ -587,6 +597,10 @@ header .para {
     border-radius: 50%;
     margin: 0 0.3rem;
 }
+.dot-container .active{
+    background-color: var(--primary);
+
+}
 
 /* services */
 .services article {
@@ -618,7 +632,8 @@ header .para {
     color: var(--primary);
     background-color: white;
     border: 2px solid var(--border);
-
+    min-width: 4.5rem;
+    height: 4.5rem;
 }
 
 /* values */
@@ -669,10 +684,37 @@ header .para {
 /* portfolio */
 
 .portfolio-banner {
-    background-image: url("../media/testimonials-bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.308)), url("../media/testimonials-bg.jpg");
     height: 50vh;
     background-size: cover;
+    padding: 5rem 10rem;
+    overflow: auto;
 }
+.portfolio-banner::-webkit-scrollbar {
+    display: none;
+}
+.quote-div {
+    margin-right: 10rem;
+}
+.portfolio-banner blockquote {
+    line-height: 1;
+}
+
+.portfolio-banner blockquote strong{
+    font-size: 3rem;
+    color: rgb(165, 164, 164);
+}
+.portfolio-person-img {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+}
+.portfolio-person-img img{
+    border-radius: 50%;
+    border: 8px solid rgba(128, 128, 128, 0.719);
+}
+
 .portfolio-nav a{
     padding: 0.4rem 0.8rem;
     border-radius: 1rem;
@@ -734,7 +776,6 @@ header .para {
     display: inline-flex;
 }
 
-
 /* sub super */
 sub {
     vertical-align: sub;
@@ -787,13 +828,7 @@ sub, sup {
     color: white;
 
 }
-/* .plan-price:hover h4{
-    box-shadow: 0 5px 3px 1px rgb(247,208,195);
-    background-color: var(--primary);
-    border-radius: 4px 4px 0 0;
-    outline: 2px solid var(--primary);
-    color: white;
-} */
+
 /* faq */
 .fa-question-circle {
     color: var(--border);
@@ -818,6 +853,7 @@ sub, sup {
     margin-top: 0.2rem;
     padding-bottom: 1rem;
 }
+
 /* contact */
 .contact .icon-box {
     border: 2px dotted var(--border);
@@ -907,6 +943,9 @@ sub, sup {
       border-radius: 50%;
       margin-left: 0.5rem;
   }
+  .social-media-icon a{
+      color: white;
+  }
   .copy-right-info strong{
       font-weight: 800;
   }
@@ -918,90 +957,112 @@ sub, sup {
   .copy-right-info .para{
       margin: 0;
   }
-.fotter-bottom {
-    padding: 1rem 0;
-}
+  .social-media-icon:hover{
+    box-shadow: 0 2px 6px color;
+    opacity: 0.8;
+    color: white;
+  }
+  
+
 
 #toggle, .bars {
     display: none;
 }
+.back-to-top {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--primary);
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 999;
+}
 
 
-/* respondive */
+/* blog page */
+
+
+.blog-article {
+    margin: 2rem 0;
+}
+.blog-content {
+    padding: 1rem
+}
+.blog-article-comments span{
+   margin-right: 1.5rem
+}
+.blog-article .btn{
+
+}
+    
+.control-pad  div {
+        font-size: 15px;
+        width: 45px;
+        height: 45px;
+        border: 1px solid rgb(227, 215, 252);
+       margin: 0 5px;
+}
+.control-pad .active {
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid var(--primary);
+}
+.blog-header {
+    background-color: rgb(244,242,242);
+    padding: 1rem;
+}
+.blog-header h1 {
+    margin-bottom: 0;
+}
+.control-pad div:hover{
+   background-color: var(--primary);
+   color: white;
+} 
+
+    
+
+
+/* responsive */
+
 @media screen and (max-width:1200px) {
 
     .container {
         max-width: 1140px;
     }
-    .width-25 {
-        max-width: 25%;
+    .ms-width-100 {
+        min-width: 100%;
     }
     .ms-wrap {
         flex-wrap: wrap;
     }
-   
+    .ms-width-48 {
+        min-width: 48%;
+    }
+    .ms-justify-center {
+        justify-content: center;
+    }
+   .ms-text-center {
+       text-align: center;
+    }
 
-}
-
-
-@media screen and (max-width:992px) {
-
-    html {
-        font-size: 14px;
+   .red-card, .white-card {
+    margin-bottom: 2rem;
     }
-    .container {
-        max-width: 960px;
-    }
-    .navmenu a {
-        margin-left: 0.75rem;
-        font-size: 1.2rem;
-        color: white;
-    }
-    
-}
-
-@media screen and (max-width:768px) {
-
-
-    html {
-        font-size: 10px;
-    }
-    body {
-        letter-spacing: 0;
-        word-spacing: 0;
-    }
-    .container {
-        max-width: 750px;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .width-100{
-       min-width: 100%;
-    }
-    
-    .sm-column {
-        flex-direction: column;
-    }
-    .sm-wrap {
-        flex-wrap: wrap;
-    }
- 
-    .heading {
-        font-size: 4rem;
-    }
-    .news-article .heading-secondary{
-        font-size: 2.5rem;
-    }
-    .para {
+    .header .sub-menu li {
+        width: 19rem;
+        text-align: left;
         font-size: 2rem;
     }
-    .para-small {
-        font-size: 1.7rem;
+    .sub-menu {
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        transform: translateX(-120%);
+        display: none;
     }
 
-
-    /* nav toggle */
-    .header {
+     /* nav toggle */
+     .header {
         position: fixed;
         z-index: 999;
         background-color: white;
@@ -1027,7 +1088,7 @@ sub, sup {
         top: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.753);
+        background-color: rgba(253, 160, 160, 0.699);
         padding-top: 5rem;
         
     }
@@ -1035,17 +1096,17 @@ sub, sup {
     .nav li{
        min-width: 100%;
        text-align: center;
-       padding-top: 5rem;
-       font-size: 3rem;
+       padding: 1rem;
+       font-size: 1.5rem;
        font-weight: 800;
+       /* background-color: yellow; */
     }
     .navmenu a {
         margin-left: 0;
-        font-size: 3rem;
     }
     .brand {
-  
         font-size: 3rem;
+        z-index: 49;
     }
 
     .bars {
@@ -1065,17 +1126,114 @@ sub, sup {
     a:hover{
         color: var(--primary);
     }
-  
-    .width-25 {
-        max-width: 25%;
+    .heading {
+        font-size: 3rem;
     }
+    .hero-h1 {
+        font-size: 4rem;
+
+    }
+   
+    .sub-heading {
+        font-size: 2rem;
+    }
+    .services .heading-tertiary {
+        font-size: 2rem;
+    }
+    
+    .heading-tertiary {
+        font-size: 2rem;
+    }
+    .heading-replace {
+        width: 100%;
+        height: 5.6rem;
+    }
+   /* portfolio */
+
+
+
+}
+
+
+@media screen and (max-width:992px) {
+
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .navmenu a {
+        margin-left: 0.75rem;
+        font-size: 1.2rem;
+    }
+    .hero-h1 {
+        font-size: 4.5rem;
+
+    }
+    .para {
+        font-size: 2rem;
+    }
+    .para-small {
+        font-size: 1.7rem;
+    }
+    .heading-replace {
+        width: 100%;
+        height: 5rem;
+    }
+    .nav li {
+        font-size: 2rem;
+
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    html {
+        font-size: 10px;
+    }
+    body {
+        letter-spacing: 0;
+        word-spacing: 0;
+    }
+    .container {
+        max-width: 750px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .width-100{
+       min-width: 100%;
+    }
+    .ms-width-100 {
+        min-width: 100%;
+    }
+    
+    .sm-column {
+        flex-direction: column;
+    }
+    .sm-wrap {
+        flex-wrap: wrap;
+    }
+    .heading-replace {
+        height: 6rem;
+    }
+    .nav li {
+        font-size: 2.5rem;
+
+    }
+
+
+
+
+   
 
 
 }
 
 @media screen and (max-width:576px) {
     html {
-        font-size: 10px;
+        font-size: 8px;
     }
     .container {
         max-width: 540px;

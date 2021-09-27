@@ -490,7 +490,7 @@ header .para {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    box-shadow: 1px 3px 10px 2px rgb(68, 68, 68); 
+    box-shadow: 1px 3px 10px 2px rgba(68, 68, 68, 0.3); 
 }
 
 /* why choose */
@@ -509,7 +509,7 @@ header .para {
 }
 .white-card {
     padding: 1.8rem;
-    box-shadow: 0 0 10px 0px rgb(170, 170, 170);
+    box-shadow: 0 0 12px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 0.5rem;
     background-color: white;
@@ -527,7 +527,16 @@ header .para {
     padding: 3rem 2rem;
 }
 .image-container {
-    position: relative;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.image-container:hover {
+    display: none;
+    z-index: -1;
 }
 
 .play-button {    
@@ -567,6 +576,24 @@ header .para {
 .about-article {
     padding-left: 2rem;
     margin: 2rem 0;
+}
+.about figure {
+    height: 0;
+    padding-bottom: 53%;
+    width: 100%;
+    position: relative;
+  }
+.about iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+  #play:checked ~img {
+    display: none;
 }
 
 /* other-brands */
@@ -634,6 +661,9 @@ header .para {
     border: 2px solid var(--border);
     min-width: 4.5rem;
     height: 4.5rem;
+}
+.services article:hover h3 {
+    color: var(--primary);
 }
 
 /* values */
@@ -807,6 +837,7 @@ sub, sup {
     text-align: center;
     border-radius: 5px;
     position: relative;
+    overflow: hidden;
 }
 .plan-price h4{
     background-color: rgb(245, 244, 244);
@@ -838,11 +869,16 @@ sub, sup {
 }
 .offer-strip {
     position: absolute;
-    rotate: 45deg;
-    text-orientation: upright;
-    height: 3rem;
-    width: 8rem;
-
+    transform: rotate(40deg);
+    font-size: 1.1rem;
+    right: -2rem;
+    top: 0.6rem;
+    height: 2rem;
+    width: 10rem;
+    color: white;
+    padding-top: 0.25rem;
+    background-color: var(--primary);
+    text-align: center;
 }
 
 /* faq */
@@ -1163,6 +1199,10 @@ sub, sup {
         width: 100%;
         height: 5.6rem;
     }
+    .offer-strip {
+        font-size: 1rem;
+    }
+
    /* teams */
     .team .nav-menu {
     font-size: 2rem;

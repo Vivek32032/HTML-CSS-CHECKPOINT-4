@@ -84,6 +84,7 @@ img {
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -381,13 +382,13 @@ header .para {
     background-color: white;
     border-radius: 0.5rem;
     padding: 0 1rem;
-    box-shadow:inset 0px 2px 3px 1px rgb(201, 200, 200);
+    box-shadow:inset 0px 0px 3px 2px rgba(0, 0, 0,0.1);
 }
 .sub-menu {
     position: absolute;
     text-align: left;
     top: 100%;
-    transform: translateX(-50%);
+    transform: translateX(-58%);
     display: none;
 }
 .menu-right-angle {
@@ -420,7 +421,7 @@ header .para {
     position: relative;
 }
 .hero {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.308)), url("../media/hero-bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.308)), url("../media/hero-bg.jpg");
     background-position: 50% 50%;
     background-size: cover;
     height: 60vh;
@@ -714,11 +715,12 @@ header .para {
 /* portfolio */
 
 .portfolio-banner {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.308)), url("../media/testimonials-bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)), url("../media/testimonials-bg.jpg");
     height: 50vh;
     background-size: cover;
     padding: 5rem 10rem;
     overflow: auto;
+    background-attachment: fixed;
 }
 .portfolio-banner::-webkit-scrollbar {
     display: none;
@@ -1042,8 +1044,8 @@ sub, sup {
    margin-right: 1.5rem
 }
 .blog-article .btn{
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
     border-radius: 0;
 }
     
@@ -1180,6 +1182,9 @@ sub, sup {
     .heading {
         font-size: 3rem;
     }
+    .about .heading {
+        font-size: 3rem;
+    }
     .hero-h1 {
         font-size: 4rem;
 
@@ -1221,6 +1226,11 @@ sub, sup {
     .blog-article-comments {
        margin-top: 2rem;
        margin-bottom: 2rem;
+    }
+    .blog-article .btn{
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border-radius: 0;
     }
 
 
